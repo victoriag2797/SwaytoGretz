@@ -75,3 +75,27 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.imagebox{
+    position: relative;
+    width: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 65%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 20%;
+}
+
+.imagebox:hover .overlay {
+    opacity: 1;
+}
